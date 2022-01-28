@@ -11,7 +11,7 @@ app.get("/", function (req, res) {
 });
 
 app.post("/", function (req, res) {
-  var url = "https://dad-jokes.p.rapidapi.com/random/joke";
+  var url = "https://dad-jokes.p.rapidapi.com/dark/joke";
   const options = {
     method: "GET",
     hostname: "dad-jokes.p.rapidapi.com",
