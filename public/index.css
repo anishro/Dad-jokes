@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
+body {
+  background-color: burlywood;
+  padding: 10px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+
+
+
+button {
+  width: 20%;
+  margin: 8px 0;
+  padding: 12px 20px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 600;
+}

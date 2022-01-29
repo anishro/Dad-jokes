@@ -11,13 +11,12 @@ app.get("/", function (req, res) {
 });
 
 app.post("/", function (req, res) {
-  var url = "https://dad-jokes.p.rapidapi.com/dark/joke";
   const options = {
     method: "GET",
     hostname: "dad-jokes.p.rapidapi.com",
     port: null,
     path: "/random/joke",
-    url: url,
+    url: "https://dad-jokes.p.rapidapi.com/dark/joke",
     headers: {
       "x-rapidapi-host": "dad-jokes.p.rapidapi.com",
       "x-rapidapi-key": "204acc9554msh8836f5045b00346p1aa394jsn88f651765729",
