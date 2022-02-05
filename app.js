@@ -31,7 +31,7 @@ app.post("/", function (req, res) {
       const setup = joke.body[0].setup;
       const punchline = joke.body[0].punchline;
       res.write(setup + "<br/>");
-      res.write(punchline);
+      res.write(punchline + "<br/>");
       res.send();
     });
 

@@ -3,18 +3,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Mukta&display=swap");
 body {
   background-color: burlywood;
+  min-height: 100vh;
   padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
-  text-align: center;
   font-family: "Josefin Sans", sans-serif;
 }
 
-
-
-
 button {
-  width: 20%;
-  margin: 8px 0;
+  width: 60%;
+  margin: 8px;
+  margin-left: 20%;
   padding: 12px 20px;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
