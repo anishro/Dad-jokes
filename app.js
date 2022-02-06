@@ -1,3 +1,5 @@
+//jshint esversion: 6
+
 const bodyParser = require("body-parser");
 const https = require("https");
 const express = require("express");
@@ -5,6 +7,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
+app.set("view engine", "ejs");
 
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/index.html");
@@ -28,11 +31,13 @@ app.post("/", function (req, res) {
     res.setHeader("Content-Type", "text/html");
     response.on("data", function (data) {
       const joke = JSON.parse(data);
-      const setup = joke.body[0].setup;
-      const punchline = joke.body[0].punchline;
-      res.write(setup + "<br/>");
-      res.write(punchline + "<br/>");
-      res.send();
+      console.log(res.statusCode);
+      console.log(data);
+      var setup = joke.body[0].setup;
+      var punchline = joke.body[0].punchline;
+      // const setup = joke.body[0].setup;
+      // const punchline = joke.body[0].punchline;
+      res.render("jokes", { setup: setup, punchline: punchline });
     });
 
     response.on("end", function () {
