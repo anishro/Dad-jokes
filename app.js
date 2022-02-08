@@ -32,7 +32,6 @@ app.post("/", function (req, res) {
     response.on("data", function (data) {
       const joke = JSON.parse(data);
       console.log(res.statusCode);
-      console.log(data);
       var setup = joke.body[0].setup;
       var punchline = joke.body[0].punchline;
       // const setup = joke.body[0].setup;
@@ -48,6 +47,6 @@ app.post("/", function (req, res) {
   request.end();
 });
 
-app.listen(3000, function () {
+app.listen(process.env.port || 3000, function () {
   console.log("server is live at localhost:3000");
 });
