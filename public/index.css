@@ -22,3 +22,16 @@ button {
   font-family: "Josefin Sans", sans-serif;
   font-weight: 600;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    color: black;
+    background: url(bgfunny.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  label {
+    margin-top: 205%;
+  }
+}

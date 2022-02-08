@@ -29,3 +29,25 @@ button {
   margin: 0 auto;
   margin-top: 15%;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    color: black;
+    background-color: #729057;
+    min-height: 100vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    background-color: #718e56;
+    height: max-content;
+    width: fit-content;
+  }
+
+  button {
+    width: 35%;
+  }
+}
